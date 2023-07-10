@@ -1,0 +1,66 @@
+/*
+.homePageWrapper{
+    background-image: url('./bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width:100vw;
+    height: 100vh;
+}
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+*{
+    margin:0;
+    
+}
+  
+.homePageWrapper{
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom right, #242582, #2f2fa2, #553d67);
+}
+
+.LoginPage{
+  width: 80vw;
+  height: 50vh;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas: "login";
+  box-shadow: 0 0 17px 10px rgb(0 0 0 / 30%);
+  border-radius: 20px;
+  background: white;
+  overflow: hidden;
+  
+}
+
+.formWrapper {
+  position: relative;
+  grid-area: login;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background: white;
+}
+
+
+.unselectable {
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #cc0000;
+
+}
+
+@media only screen and (min-width: 1024px) {
+    .LoginPage{
+        width: 50vw;
+        height: 60vh;
+    }
+}

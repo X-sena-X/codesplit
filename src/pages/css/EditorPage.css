@@ -1,0 +1,27 @@
+/*flex flex-col fixed lg:left-0 right-0 h-screen bg-blue-300 lg:w-44 px-2  items-center
+*/
+#modalContainer{
+    position: absolute;
+    
+    flex-direction: column;
+    right:0;
+    height: 100vh;
+    width:80vw;
+    background-color: rgb(101, 120, 226);
+    padding-top:0.5rem;
+    padding-bottom: 0.5rem ;
+    align-items: center;
+
+}
+
+@media only screen and (min-width: 1024px){
+    #modalContainer{
+        left: 0;
+        width: 11rem;
+        display: flex;
+    }
+    #editorWrap{
+        margin-left: 11rem;
+        display: flex;
+    }
+}
