@@ -4,6 +4,7 @@
     line-height: 1.6;
     padding-top: 20px;
     min-width:100vw;
+    overflow-x: hidden;
 }
 
 select {
